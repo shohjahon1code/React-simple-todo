@@ -16,19 +16,19 @@ function Form(props) {
     setValue("");
   };
 
-
   return (
     <form
       onSubmit={formSubmit}
-      className="form from-control d-flex justify-content-center align-items-end gap-2 "
+      className="form from-control d-flex justify-content-center align-items-end flex-column gap-2 "
     >
       <input
         value={value}
         onChange={inputChangeHandler}
         type="text"
-        className="form-control w-50 mt-5 ms-5"
+        className="form-control mt-5 ms-5"
+        placeholder="Add todo"
       />
-      <Button type="submit" className="h-100">
+      <Button type="submit" className="h-100 form-control btn-primary">
         Add To do
       </Button>
     </form>
